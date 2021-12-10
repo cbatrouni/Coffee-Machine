@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap%27');
+
+
 .login {
     -fx-font-size: 20px;
     -fx-font-family: "Times New Roman", Times, serif;
@@ -6,6 +9,6 @@
 }
 
 .homePage {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap%27);
-    -fx-font-family: font-family: 'Roboto Slab', serif;
+    -fx-font-family: 'Roboto Slab', serif;
+
 }

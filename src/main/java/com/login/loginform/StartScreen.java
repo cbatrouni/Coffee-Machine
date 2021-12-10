@@ -17,10 +17,11 @@ public class StartScreen extends Application {
         stg = stage;
         stage.setResizable(false);
         FXMLLoader fxmlLoader = new FXMLLoader(StartScreen.class.getResource("StartScreen.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 500, 400);
-        //scene.getStylesheets().add("style.css");
+        Scene scene = new Scene(fxmlLoader.load(), 700, 500);
+        scene.getStylesheets().add("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
         stage.setTitle("Login");
         stage.setScene(scene);
+        stage.setResizable(true);
         stage.show();
 
     }

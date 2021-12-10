@@ -6,14 +6,16 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 import java.io.IOException;
 
-public class LogIn {
+public class Controller {
 
-    public LogIn(){
+    public Controller(){
 
     }
+
 
     @FXML
     private Button loginButton;
@@ -23,6 +25,13 @@ public class LogIn {
     private TextField username;
     @FXML
     private PasswordField password;
+    @FXML
+    private ImageView espressoButton;
+    @FXML
+    private Label grindSizeLabel;
+
+
+
 
     public void userLogIn(ActionEvent event) throws IOException
     {
@@ -37,6 +46,8 @@ public class LogIn {
             wrongLogIn.setText("Logging in");
 
             temp.changeScene("HomePage.fxml");
+
+            //Database users;
         }
 
         else if (username.getText().isEmpty() && password.getText().isEmpty())
@@ -49,5 +60,10 @@ public class LogIn {
             wrongLogIn.setText("Username and password are incorrect or do not match");
         }
 
+    }
+
+    public void espresso(ActionEvent event) throws IOException
+    {
+        grindSizeLabel.setText("8");
     }
 }
