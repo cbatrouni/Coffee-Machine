@@ -5,32 +5,32 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.loginform.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.loginform.Controller">
    <children>
       <Label layoutX="232.0" layoutY="33.0" text="Welcome Back!">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="422.0" layoutY="111.0" text="Username">
+      <Label layoutX="399.0" layoutY="111.0" text="Username">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="425.0" layoutY="200.0" text="Password">
+      <Label layoutX="402.0" layoutY="200.0" text="Password">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <PasswordField fx:id="password" layoutX="390.0" layoutY="242.0" promptText="Password" />
-      <TextField fx:id="username" layoutX="390.0" layoutY="157.0" promptText="Username" />
+      <TextField fx:id="username" layoutX="367.0" layoutY="157.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="367.0" layoutY="242.0" promptText="Password" />
       <ImageView fitHeight="233.0" fitWidth="251.0" layoutX="67.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/coffee-logo-png-7503.png" />
          </image>
       </ImageView>
-      <Button fx:id="loginButton" layoutX="424.0" layoutY="286.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #99ccff;" text="Sign In" textFill="WHITE" />
-      <Label fx:id="wrongLogIn" layoutX="451.0" layoutY="334.0">
+      <Button fx:id="loginButton" layoutX="401.0" layoutY="286.0" mnemonicParsing="false" onAction="#userLogIn" onKeyReleased="#userLogIn" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #99ccff;" text="Sign In" textFill="WHITE" />
+      <Label fx:id="wrongLogIn" layoutX="132.0" layoutY="338.0" prefHeight="27.0" prefWidth="355.0" styleClass="errorText">
          <font>
             <Font size="13.0" />
          </font>

@@ -21,7 +21,7 @@
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="202.0" prefWidth="769.0">
                                  <children>
-                                    <Button fx:id="espressoButton" layoutX="24.0" layoutY="37.0" mnemonicParsing="false" onAction="#espresso" prefHeight="127.0" prefWidth="185.0">
+                                    <Button fx:id="espressoButton" layoutX="22.0" layoutY="28.0" mnemonicParsing="false" onAction="#espresso" prefHeight="127.0" prefWidth="185.0">
                                        <graphic>
                                           <ImageView fitHeight="141.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -30,15 +30,27 @@
                                           </ImageView>
                                        </graphic>
                                     </Button>
+                                    <Button fx:id="espressoButton1" layoutX="249.0" layoutY="28.0" mnemonicParsing="false" onAction="#espresso" prefHeight="127.0" prefWidth="185.0">
+                                       <graphic>
+                                          <ImageView fitHeight="141.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/espresso.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label layoutX="97.0" layoutY="179.0" text="Espresso" />
+                                    <Label layoutX="303.0" layoutY="179.0" text="Double Espresso" />
                                  </children></AnchorPane>
                           </content>
                         </ScrollPane>
-                        <Label layoutX="14.0" layoutY="332.0" prefHeight="23.0" prefWidth="73.0" styleClass="homePage" text="Grind size:">
+                        <Label layoutX="14.0" layoutY="332.0" prefHeight="23.0" prefWidth="73.0" text="Grind size:">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Label>
                         <Label fx:id="grindSizeLabel" layoutX="87.0" layoutY="332.0" prefHeight="23.0" prefWidth="39.0" styleClass="homePage" />
+                        <Label id="ratioLabel" layoutX="27.0" layoutY="375.0" prefHeight="22.0" prefWidth="46.0" styleClass="homePage" text="Ratio:" />
                      </children></AnchorPane>
             </content>
           </Tab>

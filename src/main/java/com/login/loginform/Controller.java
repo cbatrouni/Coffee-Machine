@@ -6,7 +6,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
+import javafx.event.EventHandler;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.KeyCode;
+
 
 import java.io.IOException;
 
@@ -29,14 +32,14 @@ public class Controller {
     private Button espressoButton;
     @FXML
     private Label grindSizeLabel;
-
-
-
+    @FXML
+    private Label ratioLabel;
 
     public void userLogIn(ActionEvent event) throws IOException
     {
         loginAttempt();
     }
+
 
     private void loginAttempt() throws IOException
     {
@@ -65,5 +68,12 @@ public class Controller {
     public void espresso(ActionEvent event) throws IOException
     {
         grindSizeLabel.setText("8");
+        ratioLabel.setText("2:1");
+    }
+
+    public void doubleEspresso(ActionEvent event) throws IOException
+    {
+        grindSizeLabel.setText("8");
+        ratioLabel.setText("2:1");
     }
 }

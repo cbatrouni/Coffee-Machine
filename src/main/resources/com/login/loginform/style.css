@@ -3,13 +3,20 @@
 
 .login {
     -fx-font-size: 20px;
-    -fx-font-family: "Times New Roman", Times, serif;
+    -fx-font-family: 'Roboto Slab', serif;
+    -fx-text-align: center;
+    -fx-color: black;
+}
+
+.errorText {
+    -fx-font-size: 14px;
+    -fx-font-family: 'Roboto Slab', serif;
     -fx-text-align: center;
     -fx-color: black;
 }
 
 .homePage {
     -fx-font-family: 'Roboto Slab', serif;
-    -fx-font-size: 14px;
+    -fx-font-size: 16px;
 
 }
