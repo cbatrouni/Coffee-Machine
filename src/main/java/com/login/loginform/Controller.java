@@ -26,7 +26,7 @@ public class Controller {
     @FXML
     private PasswordField password;
     @FXML
-    private ImageView espressoButton;
+    private Button espressoButton;
     @FXML
     private Label grindSizeLabel;
 

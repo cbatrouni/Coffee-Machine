@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.loginform.Controller">
+<AnchorPane prefHeight="500.0" prefWidth="700.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.loginform.Controller">
    <children>
       <TabPane prefHeight="500.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -21,9 +21,9 @@
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="202.0" prefWidth="769.0">
                                  <children>
-                                    <Button layoutX="24.0" layoutY="37.0" mnemonicParsing="false" prefHeight="127.0" prefWidth="185.0">
+                                    <Button fx:id="espressoButton" layoutX="24.0" layoutY="37.0" mnemonicParsing="false" onAction="#espresso" prefHeight="127.0" prefWidth="185.0">
                                        <graphic>
-                                          <ImageView fx:id="espressoButton" fitHeight="141.0" fitWidth="180.0" onMouseClicked="#espresso" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fitHeight="141.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@img/espresso.png" />
                                              </image>
@@ -38,11 +38,7 @@
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <Label fx:id="grindSizeLabel" layoutX="127.0" layoutY="359.0" prefHeight="61.0" prefWidth="82.0">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Label>
+                        <Label fx:id="grindSizeLabel" layoutX="87.0" layoutY="332.0" prefHeight="23.0" prefWidth="39.0" styleClass="homePage" />
                      </children></AnchorPane>
             </content>
           </Tab>
